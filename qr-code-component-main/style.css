@@ -1,0 +1,79 @@
+/*
+COLORS:
+
+   White: hsl(0, 0%, 100%)
+   Light gray: hsl(212, 45%, 89%)
+   Grayish blue: hsl(220, 15%, 55%)
+   Dark blue: hsl(218, 44%, 22%) 
+
+Layout Widths:
+
+   Mobile: 375px
+   Desktop: 1440px 
+
+Font:
+
+   Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+   font-family: "Outfit", sans-serif;
+   Weights: 400, 700
+
+Font size (paragraph):
+   
+   15px   
+
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: rgb(0 100 0 / 0.2) !important; */
+}
+
+body {
+  font-size: 15px;
+  background-color: hsl(212, 45%, 89%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Outfit", sans-serif;
+  position: relative;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20%;
+  min-height: 60vh;
+  padding: 0.5rem;
+  text-align: center;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 15px;
+}
+
+.image {
+  max-width: 95%;
+  border-radius: 10px;
+}
+
+.heading {
+  color: hsl(218, 44%, 22%);
+  font-weight: 700;
+  max-width: 90%;
+  font-size: 15px;
+}
+
+.para {
+  color: hsl(220, 15%, 55%);
+  font-weight: 400;
+  max-width: 90%;
+}
